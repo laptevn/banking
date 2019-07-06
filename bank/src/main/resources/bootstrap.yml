@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: bank
+  cloud:
+      config:
+        fail-fast: true
+        discovery:
+          enabled: true
+          service-id: configuration
+        retry:
+          maxInterval: 60000
+          maxAttempts: 100

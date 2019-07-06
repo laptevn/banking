@@ -1,0 +1,15 @@
+auth0:
+  domain: laptev.eu.auth0.com
+  clientId: my_id
+
+security:
+  oauth2:
+    resource:
+      id: https://banking.laptev.com
+      jwk:
+        keySetUri: https://${auth0.domain}/.well-known/jwks.json
+
+access:
+  token: my_secret_token
+token:
+  type: Bearer
